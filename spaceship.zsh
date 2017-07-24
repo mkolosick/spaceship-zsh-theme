@@ -8,7 +8,7 @@
 # CONFIGURATION The default configuration that can be overridden in .zshrc ------------------------------------------------------------------------------
 
 # ORDER
-if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
+#if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
   if [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER"]; then
     echo "Hello"
     #SPACESHIP_FIRST_LINE_PROMPT_ORDER=(
@@ -44,7 +44,7 @@ if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
       #char
     #)
   fi
-fi
+#fi
 
 # PROMPT
 SPACESHIP_PROMPT_SYMBOL="${SPACESHIP_PROMPT_SYMBOL:="➜"}"
