@@ -1,12 +1,11 @@
 ##
 ## Spaceship ZSH Theme
-##
-## Author: Denys Dovhan, denysdovhan.com
+## # Author: Denys Dovhan, denysdovhan.com
 ## License: MIT
 ## https://github.com/denysdovhan/spaceship-zsh-theme
 
 ## ------------------------------------------------------------------------------
-## CONFIGURATION The default configuration that can be overridden in .zshrc ------------------------------------------------------------------------------ 
+## CONFIGURATION The default configuration that can be overridden in .zshrc ------------------------------------------------------------------------------
 #NEWLINE='
 #'
 
@@ -1123,18 +1122,10 @@
 ## Pass all arguments to the spaceship_setup function
 #spaceship_setup "$@"
 
-
-printing1() {
-  print ""
-}
-printing2() {
+first_line_prompt() {
   print "TESTING"
 }
 
-autoload -Uz add-zsh-hook
+[[ true == true ]] && zsh-add-hook precmd first_line_prompt
 
-#add-zsh-hook precmd printing1
-add-zsh-hook precmd printing2
-
-PS1="> "
-
+PROMPT="> "
