@@ -1124,7 +1124,9 @@
 #spaceship_setup "$@"
 
 precmd() {
-  print -n "TESTING"
+  print ""
+  print "TESTING"
 }
+
 PS1="> "
 
