@@ -1080,6 +1080,10 @@ spaceship_first_line_prompt() {
   done
 }
 
+spaceship_first_line_print() {
+  print -P "$(spaceship_first_line_prompt)"
+}
+
 spaceship_second_line_prompt() {
   # Retrieve exit code of last command to use in exit_code
   # Must be captured before any other command in prompt is executed
@@ -1113,6 +1117,7 @@ spaceship_setup() {
   # Disable python virtualenv environment prompt prefix
   VIRTUAL_ENV_DISABLE_PROMPT=true
 
+  add-zsh-hook precmd spaceship_first_line_print
   # Expose Spaceship to environment variables
   PROMPT='$(spaceship_second_line_prompt)'
   PS2='$(spaceship_ps2)'
