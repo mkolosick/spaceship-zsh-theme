@@ -1081,6 +1081,7 @@ spaceship_first_line_prompt() {
 }
 
 spaceship_first_line_print() {
+  print ""
   print -P "$(spaceship_first_line_prompt)"
 }
 
