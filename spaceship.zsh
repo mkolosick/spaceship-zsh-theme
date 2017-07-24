@@ -36,12 +36,11 @@ if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
       dotnet
       ember
       exec_time
-      line_sep
+    )
+    SPACESHIP_SECOND_LINE_PROMPT_ORDER=(
       vi_mode
       jobs
       exit_code
-    )
-    SPACESHIP_SECOND_LINE_PROMPT_ORDER=(
       char
     )
   fi
