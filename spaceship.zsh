@@ -9,7 +9,7 @@
 
 # ORDER
 #if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
-  if [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER"]; then
+if [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER"]; then
     echo "Hello"
     #SPACESHIP_FIRST_LINE_PROMPT_ORDER=(
       #time
@@ -43,7 +43,7 @@
     #SPACESHIP_SECOND_LINE_PROMPT_ORDER=(
       #char
     #)
-  fi
+fi
 #fi
 
 # PROMPT
