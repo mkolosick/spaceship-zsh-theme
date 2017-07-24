@@ -1126,6 +1126,6 @@ first_line_prompt() {
   print "TESTING"
 }
 
-[[ true == true ]] && zsh-add-hook precmd first_line_prompt
+[[ true == true ]] && add-zsh-hook precmd first_line_prompt
 
 PROMPT="> "
