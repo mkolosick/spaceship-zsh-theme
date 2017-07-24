@@ -1133,7 +1133,7 @@ printing2() {
 
 autoload -Uz add-zsh-hook
 
-add-zsh-hook precmd printing1
+#add-zsh-hook precmd printing1
 add-zsh-hook precmd printing2
 
 PS1="> "
