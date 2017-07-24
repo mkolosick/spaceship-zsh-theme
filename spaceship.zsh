@@ -8,39 +8,41 @@
 # CONFIGURATION The default configuration that can be overridden in .zshrc ------------------------------------------------------------------------------
 
 # ORDER
-if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ] && [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER"]; then
-  SPACESHIP_FIRST_LINE_PROMPT_ORDER=(
-    time
-    user
-    host
-    dir
-    git
-    hg
-    package
-    node
-    ruby
-    elixir
-    xcode
-    swift
-    golang
-    php
-    rust
-    haskell
-    julia
-    docker
-    venv
-    pyenv
-    dotnet
-    ember
-    exec_time
-    line_sep
-    vi_mode
-    jobs
-    exit_code
-  )
-  SPACESHIP_SECOND_LINE_PROMPT_ORDER=(
-    char
-  )
+if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
+  if [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER"]; then
+    SPACESHIP_FIRST_LINE_PROMPT_ORDER=(
+      time
+      user
+      host
+      dir
+      git
+      hg
+      package
+      node
+      ruby
+      elixir
+      xcode
+      swift
+      golang
+      php
+      rust
+      haskell
+      julia
+      docker
+      venv
+      pyenv
+      dotnet
+      ember
+      exec_time
+      line_sep
+      vi_mode
+      jobs
+      exit_code
+    )
+    SPACESHIP_SECOND_LINE_PROMPT_ORDER=(
+      char
+    )
+  fi
 fi
 
 # PROMPT
