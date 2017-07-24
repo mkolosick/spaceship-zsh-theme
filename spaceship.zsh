@@ -1124,4 +1124,10 @@ spaceship_setup() {
 
 # Entry point
 # Pass all arguments to the spaceship_setup function
-spaceship_setup "$@"
+#spaceship_setup "$@"
+
+precmd() {
+  LEFT="TESTING"
+}
+PROMPT="> "
+
