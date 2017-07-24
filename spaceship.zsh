@@ -1123,10 +1123,18 @@
 ## Pass all arguments to the spaceship_setup function
 #spaceship_setup "$@"
 
-precmd() {
+
+printing1() {
   print ""
+}
+printing2() {
   print "TESTING"
 }
+
+autoload -Uz add-zsh-hook
+
+add-zsh-hook precmd printing1
+add-zsh-hook precmd printing2
 
 PS1="> "
 
