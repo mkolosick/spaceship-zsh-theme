@@ -9,9 +9,7 @@
 
 # ORDER
 if [ ! -n "$SPACESHIP_FIRST_LINE_PROMPT_ORDER" ]; then
-  echo "hello"
   if [ ! -n "$SPACESHIP_SECOND_LINE_PROMPT_ORDER" ]; then
-    echo "goodbye"
     SPACESHIP_FIRST_LINE_PROMPT_ORDER=(
       time
       user
